@@ -1,0 +1,121 @@
+.works {
+  padding: clamp(4rem, 11vh, 6.5rem) 0;
+  background: linear-gradient(180deg, #071510 0%, #0d241c 55%, #071510 100%);
+}
+
+.works-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+  margin-top: 1.75rem;
+}
+
+.filter-chip {
+  min-height: 2.5rem;
+  padding: 0.45rem 1rem;
+  border-radius: 999px;
+  border: 1px solid rgba(232, 240, 220, 0.28);
+  background: transparent;
+  color: var(--mist);
+  font-family: var(--font-display);
+  font-size: 0.9rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.filter-chip:focus-visible {
+  outline: 2px solid var(--lime);
+  outline-offset: 2px;
+}
+
+.filter-chip.is-active,
+.filter-chip:hover {
+  border-color: var(--lime);
+  color: var(--ink);
+  background: var(--lime);
+}
+
+.works-grid {
+  list-style: none;
+  margin: 2rem 0 0;
+  padding: 0;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+}
+
+.works-card {
+  padding: 1.25rem 1.2rem 1.4rem;
+  border-top: 1px solid rgba(232, 240, 220, 0.2);
+  background: rgba(7, 21, 16, 0.45);
+}
+
+.works-card-meta {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.75rem;
+  margin-bottom: 0.85rem;
+  font-size: 0.75rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--copper);
+}
+
+.works-card h3 {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+}
+
+.works-card p {
+  margin: 0.55rem 0 0;
+  color: var(--mist-dim);
+  font-size: 0.95rem;
+}
+
+.works-empty {
+  margin: 2rem 0 0;
+  color: var(--mist-dim);
+}
+
+.works-pagination {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-top: 1.75rem;
+}
+
+.page-btn {
+  min-height: 2.5rem;
+  padding: 0.45rem 1.1rem;
+  border-radius: 999px;
+  border: 1px solid rgba(232, 240, 220, 0.3);
+  background: transparent;
+  color: var(--mist);
+  font-family: var(--font-display);
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.page-btn:disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+}
+
+.page-btn:not(:disabled):hover,
+.page-btn:not(:disabled):focus-visible {
+  border-color: var(--lime);
+  color: var(--lime);
+}
+
+.page-btn:focus-visible {
+  outline: 2px solid var(--lime);
+  outline-offset: 2px;
+}
+
+.page-status {
+  margin: 0;
+  font-size: 0.9rem;
+  color: var(--mist-dim);
+}

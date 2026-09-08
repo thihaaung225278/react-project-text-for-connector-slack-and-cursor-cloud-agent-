@@ -1,0 +1,54 @@
+.signals {
+  padding: clamp(4rem, 11vh, 6.5rem) 0;
+  background:
+    radial-gradient(60% 40% at 0% 50%, rgba(212, 165, 116, 0.1), transparent 55%),
+    #071510;
+}
+
+.signals-list {
+  list-style: none;
+  margin: 2rem 0 0;
+  padding: 0;
+  display: grid;
+  gap: 1.25rem;
+}
+
+.signal-card blockquote {
+  margin: 0;
+  padding: 1.4rem 0 0;
+  border-top: 1px solid rgba(232, 240, 220, 0.18);
+}
+
+.signal-card p {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: clamp(1.2rem, 2.6vw, 1.55rem);
+  line-height: 1.35;
+  letter-spacing: -0.01em;
+}
+
+.signal-card footer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1rem;
+  margin-top: 1rem;
+  color: var(--mist-dim);
+  font-size: 0.92rem;
+}
+
+.signal-card cite {
+  font-style: normal;
+  font-weight: 700;
+  color: var(--lime-deep);
+}
+
+@media (min-width: 900px) {
+  .signals-list {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+  }
+
+  .signal-card blockquote {
+    height: 100%;
+  }
+}

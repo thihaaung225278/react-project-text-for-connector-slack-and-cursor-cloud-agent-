@@ -1,0 +1,7 @@
+/* Global reset handled in HomePage.css — keep entry minimal for Vite. */
+html,
+body,
+#root {
+  margin: 0;
+  min-height: 100%;
+}

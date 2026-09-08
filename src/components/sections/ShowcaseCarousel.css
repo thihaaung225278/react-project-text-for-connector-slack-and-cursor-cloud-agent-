@@ -1,0 +1,102 @@
+.showcase {
+  padding: clamp(4rem, 11vh, 6.5rem) 0;
+  background:
+    radial-gradient(70% 50% at 100% 0%, rgba(200, 245, 66, 0.07), transparent 55%),
+    #071510;
+}
+
+.showcase-frame {
+  margin-top: 2rem;
+}
+
+.showcase-swiper {
+  padding-bottom: 3rem;
+}
+
+.showcase-slide {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  min-height: clamp(18rem, 42vh, 26rem);
+  border: 1px solid rgba(232, 240, 220, 0.16);
+  border-radius: 1.25rem;
+  background: #0d241c;
+}
+
+.showcase-photo {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.showcase-copy {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  min-height: clamp(18rem, 42vh, 26rem);
+  padding: clamp(1.5rem, 4vw, 2.4rem);
+  background:
+    linear-gradient(
+      180deg,
+      rgba(7, 21, 16, 0.15) 0%,
+      rgba(7, 21, 16, 0.55) 45%,
+      rgba(7, 21, 16, 0.92) 100%
+    );
+}
+
+.showcase-kicker {
+  margin: 0 0 1rem;
+  font-size: 0.75rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--copper);
+}
+
+.showcase-copy h3 {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: clamp(1.6rem, 3.5vw, 2.2rem);
+  letter-spacing: -0.02em;
+  color: var(--mist);
+}
+
+.showcase-copy p:last-child {
+  margin: 0.9rem 0 0;
+  max-width: 28rem;
+  color: var(--mist-dim);
+}
+
+.showcase-swiper .swiper-button-prev,
+.showcase-swiper .swiper-button-next {
+  color: var(--lime);
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.showcase-swiper .swiper-button-prev::after,
+.showcase-swiper .swiper-button-next::after {
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.showcase-swiper .swiper-pagination-bullet {
+  background: rgba(232, 240, 220, 0.35);
+  opacity: 1;
+}
+
+.showcase-swiper .swiper-pagination-bullet-active {
+  background: var(--lime);
+}
+
+@media (max-width: 720px) {
+  .showcase-swiper .swiper-button-prev,
+  .showcase-swiper .swiper-button-next {
+    display: none;
+  }
+}

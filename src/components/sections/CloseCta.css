@@ -1,0 +1,13 @@
+.close {
+  padding: clamp(4.5rem, 12vh, 7rem) 0 clamp(5rem, 14vh, 8rem);
+  background:
+    radial-gradient(70% 60% at 50% 100%, rgba(200, 245, 66, 0.12), transparent 55%),
+    #04100c;
+}
+
+.close-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.85rem;
+  margin-top: 1.75rem;
+}
