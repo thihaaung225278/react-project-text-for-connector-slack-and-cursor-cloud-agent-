@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from 'react'
 import { useGSAP } from '@gsap/react'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
+import { SampleMenu } from '../components/SampleMenu'
 import { HeroScene } from '../components/hero/HeroScene'
 import { HeroOverlay } from '../components/hero/HeroOverlay'
 import { ShowcaseCarousel } from '../components/sections/ShowcaseCarousel'
@@ -67,6 +68,7 @@ export function HomePage() {
 
   return (
     <main className="home" ref={pageRef}>
+      <SampleMenu />
       <section className="hero" aria-label="Velora home">
         <div className="hero-stage">
           <HeroScene reducedMotion={reducedMotion} />
